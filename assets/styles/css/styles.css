@@ -1,3 +1,7 @@
+/* @mixin dimensions($width,$height){
+    width: $width;
+    height: $height;
+} */
 .shapes--square, .shapes--circle, .shapes--rhombus {
   display: inline-block;
   margin: 0 35px;

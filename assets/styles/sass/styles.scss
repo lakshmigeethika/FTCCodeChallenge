@@ -9,6 +9,10 @@ $yellow:#FFCC00;
   transform: rotate($deg); 
     
 } 
+/* @mixin dimensions($width,$height){
+    width: $width;
+    height: $height;
+} */
 %shapes{
     display: inline-block;
     margin: 0 35px;
@@ -40,6 +44,7 @@ body{
 }
 .shapes--rhombus{
     @extend %shapes;
+    //@include dimensions(170px,170px);
     background-color: $teal;
     @include rotate(45deg);
 }
