@@ -1,0 +1,80 @@
+
+
+/*# sourceMappingURL=styles.css.map */
+body{
+    background: #AABB00;
+    
+}
+.conatiner{
+    position: relative;
+}
+.center{
+   /* margin: auto;
+    width: 100%;
+    border: solid;
+      white-space: nowrap;
+  font-size: 20px;
+  letter-spacing: 35px;
+  white-space: nowrap;
+  line-height: 12px;
+  overflow: hidden;*/
+      text-align: center;
+    position: relative;
+    transform: translateY(50%);
+
+   
+    
+}
+.center div{
+    display: inline-block;
+  vertical-align: middle;
+    margin: 0 35px;
+}
+
+.square{
+display: inline-block;
+  vertical-align: middle;
+ height: 179px;
+ width: 179px;
+ background-color: #00AA00;
+}
+
+.circle{
+    display: inline-block;
+  vertical-align: middle;
+position: relative;
+ height: 179px;
+ width: 179px;
+ background-color: #FF6611;
+border-radius: 50%;
+    z-index: -1;
+        
+}
+
+.rhombus{
+display: inline-block;
+  vertical-align: middle;
+     height: 179px;
+ width: 179px;
+
+ background-color: #00AA99;
+    transform: rotate(45deg);
+}
+.bar{
+     position: absolute;
+     text-align: center;
+    background: #FFCC00;
+    font-size:32px;
+    padding: 10px 0;
+    color: grey;
+    border-radius: 25px;
+    width: 46%;
+    top: 50%;
+    left: 27%;
+        transform: translateY(-50%);
+
+    
+
+    
+}
+

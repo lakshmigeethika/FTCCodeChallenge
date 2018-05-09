@@ -1,0 +1,9 @@
+%center-object{
+  height: 179px;
+  widows: 179px;
+}
+.square{
+  @extend center-object
+  background-color: green;
+}
+
