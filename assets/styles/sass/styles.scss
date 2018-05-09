@@ -1,9 +1,60 @@
-%center-object{
-  height: 179px;
-  widows: 179px;
+$lime: #AABB00;
+$green: #00AA00;
+$orange: #FF6611;
+$teal: #00AA99;
+$yellow:#FFCC00;
+@mixin rotate($deg){
+  -webkit-transform: rotate($deg);
+  -ms-transform: rotate($deg);
+  transform: rotate($deg); 
+    
+} 
+%shapes{
+    display: inline-block;
+    margin: 0 35px;
+    height: 179px;
+    width: 179px;
 }
-.square{
-  @extend center-object
-  background-color: green;
+body{
+    background: $lime;
 }
-
+.align-items-center{
+    position: absolute;
+    text-align: center;
+    margin: auto;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+.shapes--square {
+    @extend %shapes;
+    background-color: $green;
+}
+.shapes--circle{
+    @extend %shapes;
+    background-color: $orange;
+    border-radius: 50%;
+    position: relative;
+    z-index: -1;
+}
+.shapes--rhombus{
+    @extend %shapes;
+    background-color: $teal;
+    @include rotate(45deg);
+}
+.container-shapes{
+    width: 900px;
+    height: 179px;
+}
+.bar{
+    background-color: $yellow;
+    border-radius: 25px;
+    font-size: 32px;
+    color: grey;
+    width: 850px;
+    height: 30px;
+    padding: 10px;
+    line-height: 30px;
+    vertical-align: middle;
+}
